@@ -9,6 +9,9 @@ jobs:
        
     steps:   
     - uses: actions/checkout@v2
+      
+    - name: Get tag name
+      uses: olegtarasov/get-tag@v1
 
     - name: submodules-init
       uses: snickerbockers/submodules-init@v4
