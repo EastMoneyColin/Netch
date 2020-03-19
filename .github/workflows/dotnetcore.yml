@@ -1,8 +1,5 @@
 name: GitHub CI .Net 4.8
-on: 
-  push:
-    tags:
-    - 'v*'
+on:[push]
 
 jobs:
   build:
