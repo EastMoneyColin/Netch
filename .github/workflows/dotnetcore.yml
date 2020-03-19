@@ -66,5 +66,6 @@ jobs:
           | :- | :- |
           | <sub>Netch.x64-${{ env.GITHUB_TAG_NAME }}.zip</sub> | <sub>${{ env.Netch64_SHA256 }}</sub> |
           | <sub>Netch.x86-${{ env.GITHUB_TAG_NAME }}.zip</sub> | <sub>${{ env.Netch86_SHA256 }}</sub> |
+      if: startsWith(github.ref, 'refs/tags/')
       env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
